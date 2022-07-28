@@ -1,0 +1,38 @@
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card-container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  place-items: center;
+  margin-top: 10vh;
+  position: relative;
+}
+
+.row-1 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 20px;
+  position: relative;
+}
+
+.row-2 {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 20px;
+  position: relative;
+}
+
+.carousel-container {
+  transition: transform 0.2s;
+}
+
+.carousel-container:hover {
+  transform: scale(1.01);
+  filter: grayscale(100%);
+}
